@@ -67,6 +67,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bitcoinPriceLabel" destination="XeY-XU-LGo" id="OUt-YG-Jwi"/>
+                        <outlet property="coinImage" destination="BvR-Sy-i1N" id="d4g-ti-C5Q"/>
+                        <outlet property="currencyPicker" destination="J6O-4u-uJK" id="hCF-U3-gQi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66966D70E2F708E6D99B7A22 /* Pods_Cryptocurrency_Ticker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC4BC3DB6A79106DC5B250F /* Pods_Cryptocurrency_Ticker.framework */; };
 		C881898920B6CCF7005373B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881898820B6CCF7005373B4 /* AppDelegate.swift */; };
 		C881898B20B6CCF7005373B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881898A20B6CCF7005373B4 /* ViewController.swift */; };
 		C881898E20B6CCF7005373B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C881898C20B6CCF7005373B4 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58DA8EB6AB2186BE52CF7092 /* Pods-Cryptocurrency Ticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptocurrency Ticker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cryptocurrency Ticker/Pods-Cryptocurrency Ticker.release.xcconfig"; sourceTree = "<group>"; };
 		C881898520B6CCF7005373B4 /* Cryptocurrency Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptocurrency Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C881898820B6CCF7005373B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C881898A20B6CCF7005373B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		C881898F20B6CCF7005373B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C881899220B6CCF7005373B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C881899420B6CCF7005373B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8835F43DB7CF60B8F062811 /* Pods-Cryptocurrency Ticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptocurrency Ticker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cryptocurrency Ticker/Pods-Cryptocurrency Ticker.debug.xcconfig"; sourceTree = "<group>"; };
+		FDC4BC3DB6A79106DC5B250F /* Pods_Cryptocurrency_Ticker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cryptocurrency_Ticker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66966D70E2F708E6D99B7A22 /* Pods_Cryptocurrency_Ticker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F2CB970857A8BB251CF3DC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDC4BC3DB6A79106DC5B250F /* Pods_Cryptocurrency_Ticker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80D9F53D84A0D36370971366 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8835F43DB7CF60B8F062811 /* Pods-Cryptocurrency Ticker.debug.xcconfig */,
+				58DA8EB6AB2186BE52CF7092 /* Pods-Cryptocurrency Ticker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C881897C20B6CCF6005373B4 = {
 			isa = PBXGroup;
 			children = (
 				C881898720B6CCF7005373B4 /* Cryptocurrency Ticker */,
 				C881898620B6CCF7005373B4 /* Products */,
+				80D9F53D84A0D36370971366 /* Pods */,
+				0F2CB970857A8BB251CF3DC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C881899720B6CCF7005373B4 /* Build configuration list for PBXNativeTarget "Cryptocurrency Ticker" */;
 			buildPhases = (
+				B08302CB0290D0AD55A86B2F /* [CP] Check Pods Manifest.lock */,
 				C881898120B6CCF7005373B4 /* Sources */,
 				C881898220B6CCF7005373B4 /* Frameworks */,
 				C881898320B6CCF7005373B4 /* Resources */,
+				0B388EB63CCBBF9CC6015367 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B388EB63CCBBF9CC6015367 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Cryptocurrency Ticker/Pods-Cryptocurrency Ticker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cryptocurrency Ticker/Pods-Cryptocurrency Ticker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B08302CB0290D0AD55A86B2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cryptocurrency Ticker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C881898120B6CCF7005373B4 /* Sources */ = {
@@ -278,15 +347,13 @@
 		};
 		C881899820B6CCF7005373B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8835F43DB7CF60B8F062811 /* Pods-Cryptocurrency Ticker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRUZ42SH8K;
 				INFOPLIST_FILE = "Cryptocurrency Ticker/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LiroyYarimi.Cryptocurrency-Ticker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +363,13 @@
 		};
 		C881899920B6CCF7005373B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58DA8EB6AB2186BE52CF7092 /* Pods-Cryptocurrency Ticker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BRUZ42SH8K;
 				INFOPLIST_FILE = "Cryptocurrency Ticker/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LiroyYarimi.Cryptocurrency-Ticker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
