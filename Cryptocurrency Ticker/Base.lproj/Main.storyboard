@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,60 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cryptocurrency_Ticker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6O-4u-uJK">
+                                <rect key="frame" x="0.0" y="363" width="375" height="304"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeY-XU-LGo">
+                                <rect key="frame" x="136" y="304" width="103" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.98999994993209839" green="0.64518314599990845" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uqu-MW-ymy">
+                                <rect key="frame" x="0.0" y="20" width="375" height="284"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="BvR-Sy-i1N">
+                                        <rect key="frame" x="123.5" y="78.5" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="288-UK-Ahb"/>
+                                            <constraint firstAttribute="width" constant="128" id="IhX-p4-nls"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="BvR-Sy-i1N" firstAttribute="centerY" secondItem="Uqu-MW-ymy" secondAttribute="centerY" id="S79-mp-fia"/>
+                                    <constraint firstItem="BvR-Sy-i1N" firstAttribute="centerX" secondItem="Uqu-MW-ymy" secondAttribute="centerX" id="eJO-Vr-cEK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235294117646" green="0.52941176470588236" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J6O-4u-uJK" firstAttribute="top" secondItem="XeY-XU-LGo" secondAttribute="bottom" id="7U3-Ir-SZT"/>
+                            <constraint firstItem="XeY-XU-LGo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DFX-90-C1e"/>
+                            <constraint firstItem="XeY-XU-LGo" firstAttribute="top" secondItem="Uqu-MW-ymy" secondAttribute="bottom" id="Df6-gy-3hg"/>
+                            <constraint firstItem="J6O-4u-uJK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YC6-eU-iVE"/>
+                            <constraint firstItem="Uqu-MW-ymy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bif-RF-yxm"/>
+                            <constraint firstItem="XeY-XU-LGo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bnZ-O9-D0C"/>
+                            <constraint firstItem="Uqu-MW-ymy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dWX-Ih-hIf"/>
+                            <constraint firstItem="J6O-4u-uJK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pud-zP-0KD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J6O-4u-uJK" secondAttribute="bottom" id="tzK-s8-dp9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uqu-MW-ymy" secondAttribute="trailing" id="wxK-1d-EBI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bitcoin" width="335" height="335"/>
+    </resources>
 </document>
